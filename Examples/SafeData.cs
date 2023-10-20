@@ -24,7 +24,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 using System;
-using JEngine.AntiCheat;
 
 namespace JEngine.Examples
 {
@@ -38,8 +37,8 @@ namespace JEngine.Examples
         private long realB;
 
         //Use this format to declare safe data
-        public JFloat a;
-        public JLong b;
+        public float a;
+        public long b;
 
         public SafeData()
         {

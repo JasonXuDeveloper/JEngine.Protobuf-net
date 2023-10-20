@@ -27,6 +27,7 @@ using System;
 using System.Collections.Generic;
 using JEngine.Examples.Data;
 using JEngine.Core;
+using UnityEngine;
 
 namespace JEngine.Examples
 {
@@ -200,7 +201,7 @@ namespace JEngine.Examples
         {
             try
             {
-                var res = (TextAsset) AssetMgr.Load(path);
+                var res = AssetMgr.Load<TextAsset>(path);
                 return ProtoBuf.Serializer.Deserialize(typeof(T), new System.IO.MemoryStream(res.bytes)) as T;
             }
             catch (Exception ex)
